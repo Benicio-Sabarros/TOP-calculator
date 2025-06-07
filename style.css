@@ -3,44 +3,128 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-#container{
-    width: 700px;
-    height: 800px;
-    background-color: #4e5d74;
+  }
+  
+  #container{
+    width: 450px;
+    height: 600px;
+    background-color: #5c5c5c;
     margin: auto;
     border-radius: 30px;
-    margin-top: 50px;
+    margin-top: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-#screen{
-    width: 600px;
-    height: 150px;
-    margin-top: 50px;
+  }
+  
+  #screen{
+    width: 380px;
+    height: 100px;
+    margin-top: 25px;
     background-color: rgb(199, 199, 199);
     border-radius: 30px;
     font-size: 45px;
     text-align: end;
-}
-#screen p{
+    padding: 10px;
+  }
+  #screen p{
     margin: 0;
-    margin-right: 20px;
-    margin-top: 10px;
+    margin-right: 10px;
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-}
-
-.credit{
+  }
+  
+  #total{
+    font-size: 25px;
+    font-weight: 200;
+  }
+  
+  
+  #buttons, #delete-buttons, #math-buttons, #numbers, #operators, .row{
+    display:flex;
+    gap: 3px;
+  }
+  
+  #buttons{
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  
+  #delete-buttons{
+    width: 400px;
+    height: 70px;
+  }
+  
+  #math-buttons{
+    flex: 1;
+  }
+  
+  #numbers, #operators{
+    flex-direction: column-reverse;
+  }
+  
+  #numbers{
+    width: 300px;
+    height: 350px;
+  }
+  
+  #operators{
+    width: 100px;
+    height: 350px;
+  }
+  #operators button{
+    background-color: #4e5d74;
+    color: black;
+  }
+  .row{
+    flex: 1;
+  }
+  
+  button{
+    flex: 1;
+    color: #e8e8e1;
+    background-color: #1d292e;
+    font-size: 30px;
+    border-radius: 20px;
+    border: 2px solid black;
+  }
+  
+  button:hover{
+    opacity: 80%;
+  }
+  
+  #math-buttons button:hover{
+    background-color: #2e4047;
+  }
+  
+  #equals{
+    background-color: #e6640b;
+    color: black;
+  }
+  #math-buttons #equals:hover{
+    background-color:#97450f;
+  }
+  
+  button#addition{color: #f5d088;}
+  button#subtraction{color: #e19a5e;}
+  button#multiplication{color: #77c3b1;}
+  button#division{color: #e1e1d2;}
+  button#clear{
+    background-color: #e1e1d2;
+    color:#0c0a75;
+  }
+  button#delete{
+    background-color: #e1e1d2;
+    color: #750a0a;
+  }
+  
+  .credit{
     color: white;
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     margin-top: 30px;
-}
+  }
